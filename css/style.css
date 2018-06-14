@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Lato', 'Roboto', sans-serif; }
+
+.container {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 20px; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.input-container {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  padding: 10px; }
+
+.input-box {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  /* webkit solution */
+  /* mozilla solution */ }
+  .input-box .input {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    align-items: center; }
+    .input-box .input label {
+      margin-right: 10px; }
+    .input-box .input .input-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 0 0 50%;
+      border: 1px solid #f2f2f2;
+      border-radius: 2px; }
+      .input-box .input .input-wrapper input.a {
+        padding: 11px;
+        width: 100%;
+        outline: none;
+        border: none; }
+      .input-box .input .input-wrapper .icon {
+        padding: 10px;
+        border-left: 1px solid #f2f2f2; }
+      .input-box .input .input-wrapper .icon_border {
+        border-left: transparent; }
+  .input-box .input-wrapper.input-wrapper_width {
+    flex: 0 0 25%; }
+  .input-box .input_padding {
+    padding: 10px 0; }
+  .input-box ::-webkit-input-placeholder {
+    text-align: right; }
+  .input-box input:-moz-placeholder {
+    text-align: right; }
+
+.input_text {
+  align-items: end; }
+
+.input.input_text {
+  align-items: end; }
+
+textarea#someText {
+  border: 1px solid #f2f2f2; }
+
+.fa-calendar-alt,
+.fa-angle-down {
+  color: #074a86; }
+
+.header h3 {
+  text-transform: uppercase; }
+
+.main-content {
+  display: flex;
+  padding-bottom: 60px;
+  justify-content: space-between; }
+  .main-content .box {
+    flex: 1 1 33.333%;
+    display: flex;
+    flex-direction: column; }
+    .main-content .box label {
+      margin-bottom: 10px;
+      display: inline-block; }
+    .main-content .box input {
+      width: 80%;
+      padding: 11px;
+      border: 1px solid #f2f2f2; }
+
+#grid {
+  width: 100%; }
+
+.grid-container {
+  float: left;
+  width: 100%;
+  position: relative; }
+  .grid-container .wrapper .border-wrapper {
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+    position: relative; }
+  .grid-container .wrapper .grid-wrapper {
+    overflow-x: auto; }
+    .grid-container .wrapper .grid-wrapper h3 {
+      padding: 0 0 10px 0; }
+
+.plus {
+  display: flex;
+  padding: 10px 0 0 0; }
+  .plus .btn {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #074a86;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer; }
+
+.btn {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  margin: 10px 10px 0 0;
+  background-color: #074a86;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer; }
+
+.btn_color {
+  background-color: indianred; }
+
+.contextmenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .contextmenu nav {
+    width: 250px;
+    padding: 5px; }
+    .contextmenu nav ul li {
+      list-style: none; }
+      .contextmenu nav ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #333; }
+        .contextmenu nav ul li a i.fas.fa-angle-right {
+          float: right; }
+      .contextmenu nav ul li .border_none {
+        border: none; }
+    .contextmenu nav ul .disabled {
+      pointer-events: none;
+      opacity: 0.6; }
+
+.grid-container .wrapper .border-wrapper .grid-wrapper .contextmenu.open {
+  display: inline-block;
+  background-color: #f5f5f5; }
+
+.ui-widget-header {
+  background-color: #f5f5f5;
+  background-image: none;
+  color: #074a86; }
+
+.ui-jqgrid {
+  border: none; }
+
+.ui-search-toolbar {
+  display: none; }
+
+.ui-state-highlight,
+.ui-widget-content
+.ui-state-highlight,
+.ui-widget-header
+.ui-state-highlight {
+  border: 1px solid #074a86;
+  background: #074a86;
+  color: #fff; }
+
+.ui-datepicker-calendar {
+  color: #074a86; }

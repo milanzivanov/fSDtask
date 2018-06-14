@@ -1,0 +1,17 @@
+{
+  "name": "fsd-task",
+  "version": "1.0.0",
+  "description": "task for fsd company",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "mz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
